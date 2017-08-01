@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.newland.iot.mediaserver.dao.user.SmUserDao">
+
+
+	<resultMap type="com.newland.iot.mediaserver.model.user.SmUser" id="SmUserMap">
+		<result property="userId" column="user_id"/>
+		<result property="userName" column="user_name"/>
+		<result property="loginName" column="login_name"/>
+		<result property="password" column="password"/>
+		<result property="tel" column="tel"/>
+		<result property="email" column="email"/>
+		<result property="homeProv" column="home_prov"/>
+		<result property="homeProvName" column="home_prov_name"/>
+		<result property="homeCity" column="home_city"/>
+		<result property="homeCityName" column="home_city_name"/>
+		<result property="homeCounty" column="home_county"/>
+		<result property="homeCountyName" column="home_county_name"/>
+		<result property="organId" column="organ_id"/>
+		<result property="organName" column="organ_name"/>
+		<result property="organAddress" column="addr_desc"/>
+		<result property="organType" column="organ_type"/>
+		<result property="organTypeName" column="organ_type_name"/>
+		<result property="organLevel" column="organ_level"/>
+		<result property="organLevelName" column="organ_level_name"/>
+		<result property="userDesc" column="user_desc"/>
+		<result property="status" column="status"/>
+		<result property="statusName" column="status_name"/>
+		<result property="isLogin" column="is_login"/>
+		<result property="modifyDesc" column="modify_desc"/>
+	</resultMap>
+
+	<select id="selectList" resultMap="SmUserMap">
+		select * from sm_user
+	</select>
+</mapper>
