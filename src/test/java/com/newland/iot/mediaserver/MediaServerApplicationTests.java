@@ -15,8 +15,4 @@ public class MediaServerApplicationTests {
      *
      * 不要在此写controller Service dao的测试代码
      */
-    @Test
-    public void contextLoads() {
-
-    }
 }
