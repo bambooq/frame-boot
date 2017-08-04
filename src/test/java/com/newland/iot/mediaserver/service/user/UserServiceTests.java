@@ -22,5 +22,6 @@ public class UserServiceTests extends MediaServerApplicationTests {
         smUser.setUserName("zhengqi");
 
         redisTemplate.opsForHash().put("user", "zhengqi", smUser);
+        SmUser smUser1 = (SmUser) redisTemplate.opsForHash().get("user", "zhengqi");
     }
 }
