@@ -1,6 +1,16 @@
 # frame-boot
 springboot base frame
 
+集成组件
+spring
+springmvc
+mybatis 
+mybatis-plus
+druid
+redis
+devtools
+Jackson
+
 框架功能
 
 采用redis做缓存数据库实现基于spring的业务缓存
